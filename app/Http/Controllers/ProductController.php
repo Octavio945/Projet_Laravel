@@ -87,4 +87,10 @@ class ProductController extends Controller
         $produits->delete();
         return redirect('/')->with('status', 'Le Produit a été supprimer avec Succès .');
     }
+
+    public function show($id)
+    {
+        $produits = products::find($id);
+        return view('product.show', compact('produits'));
+    }
 }

@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Liste Produits</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="container-fluid text-center">
+  <body style="background-color: #131313; color:white;">
+    <div class="container-fluid text-center ">
         <div class="row">
-          <div class="col s12">
-            <div class="col-sm-12 p-3">
+          <div class="col s12  ">
+            <div class="col-sm-12 p-3 ">
                 <h1>BACK OFFICE E-COMMERE </h1>
             <hr>
             <div class="row g-0 text-center">
@@ -26,19 +27,19 @@
             </div>
             <hr>
             </div>
-            <div class="row g-0 text-center">
+            <div class="row g-0 text-center " >
                 <div class="col-sm-6 col-md-2">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <a href="/" class="accordion-button collapsed">
+                    <div class="accordion" id="accordionPanelsStayOpenExample" >
+                        <div class="accordion-item" >
+                          <h2 class="accordion-header " >
+                            <a href="/" class="accordion-button collapsed bg-dark text-white" >
                               Mes Produits
                             </a>
                           </h2>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <a href="/categorie" class="accordion-button collapsed"     >
+                            <a href="/categorie" class="accordion-button collapsed bg-dark text-white"     >
                             Categories
                             </a>
                           </h2>
@@ -76,8 +77,9 @@
                                     <td>{{ $produit->stock }}</td>
                                     <td>{{ $produit->categories->name }}</td>
                                     <td>
-                                        <a href="/modifier-produit/{{  $produit->id  }}" class="btn btn-info">Modifier</a>
-                                        <a href="/supprimer-produit/{{  $produit->id  }}" class="btn btn-danger">Supprimer</a>
+                                        <a href="/detail_produit/{{ $produit->id }}" class="btn btn-warning"><i class="bi bi-eye">Voir</i></a>
+                                        <a href="/modifier-produit/{{  $produit->id  }}" class="btn btn-info"><i class="bi bi-pencil">Modifier</i></a>
+                                        <a href="/supprimer-produit/{{  $produit->id  }}" class="btn btn-danger"><i class="bi bi-trash">Supprimer</i></a>
                                     </td>
                                 </tbody>
                                 @php

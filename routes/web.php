@@ -35,3 +35,7 @@ Route::post('/modifier_categorie/traitement', [CategorieController::class, 'modi
 //route pour les suppressions
 Route::get('/supprimer-produit/{id}', [ProductController::class, 'supprimer_product']);
 Route::get('/supprimer-categorie/{id}', [CategorieController::class, 'supprimer_categorie']);
+
+
+// route pour voir lesdetaildes produit
+Route::get('/detail_produit/{id}', [ProductController::class, 'show']);

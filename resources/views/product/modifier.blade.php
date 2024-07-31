@@ -6,7 +6,7 @@
     <title>Modifier Produits</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color: #131313; color:white;">
     <div class="container ">
         <div class="row">
           <div class="col s12">
@@ -60,7 +60,7 @@
 
                 <button type="submit" class="btn btn-primary">Modifier un Produit</button>
                 <br><br>
-                <a href="/product" class="btn btn-danger">Revenir Liste Produit</a>
+                <a href="/" class="btn btn-danger">Revenir Liste Produit</a>
               </form>
           </div>
         </div>
