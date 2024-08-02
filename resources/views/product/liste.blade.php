@@ -26,6 +26,14 @@
                 </div>
             </div>
             <hr>
+            <div class="col-sm-12 p-3 ">
+                 {{-- Message pour affiher le succe de l'operation --}}
+                 @if(session('status'))
+                 <div class="alert alert-success">
+                     {{ session('status') }}
+                 </div>
+                 <hr>
+                 @endif
             </div>
             <div class="row g-0 text-center " >
                 <div class="col-sm-6 col-md-2">
@@ -47,12 +55,6 @@
                       </div>
                 </div>
                 <div class="col-6 col-md-10">
-                    {{-- Message pour affiher le succe de l'operation --}}
-                        @if(session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                        @endif
                         <table class="table table-dark table-striped table-hover">
                             <thead>
                                 <tr>
