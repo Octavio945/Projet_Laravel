@@ -1,4 +1,4 @@
-Titre du Projet : projet_laravel 
+Titre du Projet : Gestion des Produits E-commerce 
 <<<<<<< HEAD
 Les capture d’écran des interfaces :
 
